@@ -1,0 +1,125 @@
+#sidebar{
+	display: block;
+	background-color: #2980b9;
+	position: absolute;
+	width: 15%;
+	height: 100%;
+}
+
+#sidebar:hover{
+	background-color: #2980d0;
+}
+
+#ranking{
+	display: block;
+	background-color: #2980b9;
+	position: absolute;
+	width: 15%;
+	height: 100%;
+	left: 85%;
+	overflow: hidden;
+}
+
+#ranking:hover{
+	background-color: #2980d0;
+}
+
+#game {
+	display: block;
+	left:15%;
+	width:83%;
+	height:100%;
+	position: absolute;
+	background-color:#34495e;
+}
+
+#game:hover {
+	background-color: #344964;
+}
+
+
+#user {
+	width: 50%;
+	padding-left: 25%;
+	padding-top: 25%;
+}
+
+#userInfo {
+    width: 50%;
+    padding-left: 25%;
+    padding-top: 5%;
+    text-align: center;
+   	font-size: 25;
+	font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr.faded {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#userTools {
+	width: 50%;
+	height: 45%;
+    padding-left: 25%;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 25;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#social {
+	width: 80%;
+	padding-left: 10%;
+	display: inline-block;
+}
+
+.media {
+	width: 30%;
+}
+
+#userTools > p:hover{
+	text-decoration: underline;
+}
+
+#clasament {
+    width: 50%;
+    padding-left: 25%;
+    padding-top: 15%;
+    text-align: center;
+   	font-size: 32;
+	font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rankingTable {
+    width: 100%;
+    padding-left: 15%;
+    padding-top: 30%;
+}
+
+.rankingName {
+	width: 75%;
+	padding-bottom: 4%;
+    text-align: left;
+   	font-size: 20;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rankingScore {
+	width: 25%;
+	padding-bottom: 4%;
+	padding-right: 15%;
+    text-align: right;
+   	font-size: 20;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background-image: url("http://www.designbolts.com/wp-content/uploads/2012/12/Skeletal-Weave-White-Tileable-pattern-for-website-background.jpg");
+	background-repeat: repeat;
+}
