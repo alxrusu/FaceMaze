@@ -1,0 +1,1312 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"co",
+				"console"
+			],
+			[
+				"s",
+				"server"
+			],
+			[
+				"re",
+				"readChan"
+			],
+			[
+				"I",
+				"Int"
+			],
+			[
+				"num",
+				"numcl"
+			],
+			[
+				"in",
+				"intToDigit"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"el",
+				"elem"
+			],
+			[
+				"cas",
+				"castigat"
+			],
+			[
+				"mo",
+				"movelist"
+			],
+			[
+				"S",
+				"String"
+			],
+			[
+				"put",
+				"putStrLn"
+			],
+			[
+				"so",
+				"sockh"
+			],
+			[
+				"sock",
+				"sockHandler"
+			],
+			[
+				"c",
+				"count"
+			],
+			[
+				"ac",
+				"activePlayers"
+			],
+			[
+				"b",
+				"B8"
+			],
+			[
+				"p",
+				"putMVar"
+			],
+			[
+				"t",
+				"takeMVar"
+			],
+			[
+				"pu",
+				"putStrLn"
+			],
+			[
+				"elem",
+				"elemIndex"
+			],
+			[
+				"as",
+				"ascii"
+			],
+			[
+				"ms",
+				"msgSender"
+			],
+			[
+				"ma",
+				"maxInt"
+			],
+			[
+				"im",
+				"import"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"w",
+				"w_ant"
+			],
+			[
+				"pr",
+				"prev"
+			],
+			[
+				"scor",
+				"scores"
+			],
+			[
+				"cont",
+				"content"
+			],
+			[
+				"ra",
+				"raw_input"
+			],
+			[
+				"rand",
+				"randint"
+			],
+			[
+				"ran",
+				"randint"
+			],
+			[
+				"In",
+				"Input"
+			],
+			[
+				"up",
+				"upds"
+			],
+			[
+				"bu",
+				"buffe"
+			],
+			[
+				"str",
+				"strcmp"
+			],
+			[
+				"buf",
+				"buffe"
+			],
+			[
+				"per",
+				"perror"
+			],
+			[
+				"send",
+				"send_fd"
+			],
+			[
+				"new",
+				"newsockfd2"
+			],
+			[
+				"ID",
+				"ID_FILE"
+			],
+			[
+				"soc",
+				"sockfd"
+			],
+			[
+				"Id",
+				"ID_FILE"
+			],
+			[
+				"start",
+				"StartUpdateService"
+			],
+			[
+				"C",
+				"CurrentItem"
+			],
+			[
+				"ID_",
+				"ID_USER"
+			],
+			[
+				"Fi",
+				"FixCursor"
+			],
+			[
+				"FILES",
+				"FILES_DIR"
+			],
+			[
+				"refre",
+				"RefreshFileList"
+			],
+			[
+				"size",
+				"sizeof"
+			],
+			[
+				"fac",
+				"facc_data"
+			],
+			[
+				"can",
+				"Canvas"
+			],
+			[
+				"poz",
+				"poz_in_ctext"
+			],
+			[
+				"atr",
+				"attroff"
+			],
+			[
+				"cur",
+				"CurrentItem"
+			],
+			[
+				"ca",
+				"Canvas"
+			],
+			[
+				"te",
+				"text_castigator"
+			],
+			[
+				"of",
+				"offspring2"
+			],
+			[
+				"o",
+				"offspring2"
+			],
+			[
+				"Be",
+				"BestLocal"
+			],
+			[
+				"pop",
+				"popbest"
+			],
+			[
+				"fi",
+				"Fitness"
+			],
+			[
+				"get",
+				"get_bit"
+			],
+			[
+				"fit",
+				"fitness"
+			],
+			[
+				"rol",
+				"rolu"
+			],
+			[
+				"f",
+				"fcw"
+			],
+			[
+				"print",
+				"printcube"
+			],
+			[
+				"prin",
+				"printcube"
+			],
+			[
+				"cuv",
+				"cuvan_curent"
+			],
+			[
+				"cu",
+				"cuvan_curent"
+			],
+			[
+				"fo",
+				"fost_tura"
+			],
+			[
+				"load",
+				"LoadFile"
+			],
+			[
+				"pa",
+				"path_for_removal"
+			],
+			[
+				"pah",
+				"path_for_removal"
+			],
+			[
+				"FI",
+				"Files"
+			],
+			[
+				"FIL",
+				"Files"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"File",
+				"Files"
+			],
+			[
+				"Re",
+				"RefreshFileList"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"Init",
+				"InitSQL"
+			],
+			[
+				"yy",
+				"yylineno"
+			],
+			[
+				"U",
+				"UMINUS"
+			],
+			[
+				"ex",
+				"expr"
+			],
+			[
+				"MI",
+				"MINUS"
+			],
+			[
+				"mi",
+				"MINUS"
+			],
+			[
+				"n",
+				"NUM"
+			],
+			[
+				"er",
+				"eroare"
+			],
+			[
+				"line",
+				"LINESEP"
+			],
+			[
+				"declara",
+				"declaration"
+			],
+			[
+				"err",
+				"errs"
+			],
+			[
+				"MAX",
+				"MAXERRORS"
+			],
+			[
+				"VAR",
+				"VAR_ID"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"PAR",
+				"PARI"
+			],
+			[
+				"E",
+				"expresie"
+			],
+			[
+				"var",
+				"VAR_ID"
+			],
+			[
+				"ins",
+				"instructiune"
+			],
+			[
+				"dec",
+				"declaratie"
+			],
+			[
+				"CL",
+				"CLASS_ID"
+			],
+			[
+				"cl",
+				"CLASS_ID"
+			],
+			[
+				"CLA",
+				"CLASS_REF"
+			],
+			[
+				"Cl",
+				"CLASS_ID"
+			],
+			[
+				"FU",
+				"FUNC_ID"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"L",
+				"lhand"
+			],
+			[
+				"END",
+				"ENDEVAL"
+			],
+			[
+				"exp",
+				"explist"
+			],
+			[
+				"EQ",
+				"EQUALS"
+			],
+			[
+				"EGA",
+				"EGALS"
+			],
+			[
+				"r",
+				"rhand"
+			],
+			[
+				"epr",
+				"expresion"
+			],
+			[
+				"id",
+				"id_dec_in_sala"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "nodejs/node_server.js",
+			"settings":
+			{
+				"buffer_size": 372,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "nodejs/node_test.html",
+			"settings":
+			{
+				"buffer_size": 396,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "testcode/index.php",
+			"settings":
+			{
+				"buffer_size": 996,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "testcode/test.php",
+			"settings":
+			{
+				"buffer_size": 122,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1420,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scripts.js",
+			"settings":
+			{
+				"buffer_size": 1354,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "stylesheet.css",
+			"settings":
+			{
+				"buffer_size": 2117,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 200.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: d",
+				"Package Control: Disable Package"
+			],
+			[
+				"sublime haskel def",
+				"Preferences: SublimeHaskell Settings – Default"
+			],
+			[
+				"haskel",
+				"Preferences: SublimeHaskell Settings – User"
+			],
+			[
+				"sublimehaskell",
+				"Preferences: SublimeHaskell Settings – Default"
+			],
+			[
+				"syntax hask",
+				"Set Syntax: Haskell"
+			],
+			[
+				"sublimeHaskell: ",
+				"SublimeHaskell: Check & Lint"
+			],
+			[
+				"haskell ",
+				"SublimeHaskell: Run"
+			],
+			[
+				"haskell b",
+				"SublimeHaskell: Rebuild"
+			],
+			[
+				"haskell run",
+				"SublimeHaskell: Run"
+			],
+			[
+				"haske",
+				"SublimeHaskell: Configure"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 501.0,
+		"history":
+		[
+			"cmd",
+			"node",
+			"maxInt",
+			"sys.exit()",
+			"import sys",
+			"sys.exit()",
+			"ls",
+			"list",
+			"exit",
+			"da",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/sgbd/sgbd"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/proiectTW/nodejs/node_server.js",
+		"/C/xampp/htdocs/proiectTW/nodejs/node_test.html",
+		"/C/Users/alxrusu.IAS/Desktop/tw/serv.js",
+		"/C/Users/alxrusu.IAS/Desktop/tw/test1.html",
+		"/C/Users/alxrusu.IAS/Desktop/Haskel/Main.hs",
+		"/C/Users/alxrusu.IAS/Desktop/PF/server2.hs",
+		"/C/Users/alxrusu.IAS/Desktop/PF/client.hs",
+		"/C/Users/alxrusu.IAS/Desktop/events.txt",
+		"/C/Users/alxrusu.IAS/AppData/Local/Microsoft/Windows/INetCache/IE/N38QK3JE/events[1].txt",
+		"/C/Users/alxrusu.IAS/AppData/Local/Microsoft/Windows/INetCache/IE/DIJFYVT6/events[1].txt",
+		"/C/Users/alxrusu.IAS/Desktop/events.txt.txt",
+		"/C/Users/alxrusu.IAS/AppData/Roaming/Sublime Text 3/Packages/SublimeHaskell/Settings/SublimeHaskell.sublime-settings",
+		"/C/Users/alxrusu.IAS/AppData/Roaming/Sublime Text 3/Packages/User/SublimeHaskell.sublime-settings",
+		"/C/Users/alxrusu.IAS/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/alxrusu.IAS/Desktop/Haskel/Net/client.hs",
+		"/C/Users/alxrusu.IAS/Desktop/Haskel/Net/server.hs",
+		"/C/Users/alxrusu.IAS/AppData/Roaming/Sublime Text 3/Packages/User/haskel_build.sublime-build",
+		"/C/Users/alxrusu.IAS/Desktop/Haskel/try.py",
+		"/C/Users/alxrusu.IAS/Desktop/Haskel/first.hs",
+		"/C/xampp/htdocs/display_log.php",
+		"/C/xampp/htdocs/crawler/crawler.py",
+		"/C/xampp/htdocs/index.php",
+		"/C/xampp/htdocs/runner.php",
+		"/C/xampp/htdocs/log_textmining.txt",
+		"/C/xampp/htdocs/crawler/data_copy.py",
+		"/C/xampp/htdocs/crawler/data/case.json",
+		"/C/xampp/htdocs/log_textminingresults.txt",
+		"/C/xampp/htdocs/test.php",
+		"/C/Users/alxrusu.IAS/Downloads/osd.txt",
+		"/C/Users/alxrusu.IAS/Downloads/cal - definiție _ dexonline.html",
+		"/C/Users/alxrusu.IAS/Desktop/features.txt",
+		"/C/Users/alxrusu.IAS/Desktop/text.txt",
+		"/C/Users/alxrusu.IAS/Desktop/tokenize.py",
+		"/C/Users/alxrusu.IAS/IdeaProjects/Tokenizer/classify.py",
+		"/C/Users/alxrusu.IAS/Desktop/ENG_dom_sociala.txt",
+		"/C/Users/alxrusu.IAS/IdeaProjects/Tokenizer/tokvalues.txt",
+		"/C/Users/alxrusu.IAS/IdeaProjects/Tokenizer/src/GUIDesigner/Main.java",
+		"/C/Users/alxrusu.IAS/Downloads/mysql-connector-java-5.1.39/mysql-connector-java-5.1.39/docs/README.txt",
+		"/C/Users/alxrusu.IAS/Downloads/mysql-connector-java-5.1.39/mysql-connector-java-5.1.39/README.txt",
+		"/C/Users/alxrusu.IAS/SQL/Biblioteca/GESTIUNE_CARTI.pls",
+		"/C/Users/alxrusu.IAS/Desktop/keywords.txt",
+		"/D/facultate/proiectTW-django/proiectTW/facemaze/views.py",
+		"/D/facultate/proiectTW-django/proiectTW/proiectTW/urls.py",
+		"/D/facultate/proiectTW-django/create_db.sql",
+		"/D/facultate/proiectTW-django/grants.sql",
+		"/D/facultate/proiectTW-django/proiectTW/facemaze/models.py",
+		"/D/sgbd/sgbd/sgbd/settings.py",
+		"/D/facultate/proiectTW-django/proiectTW/proiectTW/settings.py",
+		"/C/Users/alxrusu.IAS/SQL/clone.sql",
+		"/C/Users/alxrusu.IAS/Desktop/if.html",
+		"/C/Users/alxrusu.IAS/Downloads/download.htm",
+		"/C/Users/alxrusu.IAS/SQL/carnet_note.sql",
+		"/C/Users/alxrusu.IAS/SQL/catalog.sql",
+		"/C/Users/alxrusu.IAS/Downloads/hjq74XRh.txt",
+		"/C/Users/alxrusu.IAS/Downloads/GRANTS.txt",
+		"/C/Users/alxrusu.IAS/Desktop/sgbd7.txt",
+		"/D/facultate/proiectTW/doc/index.html",
+		"/D/facultate/proiectTW/doc/scholarly.css",
+		"/D/facultate/proiectTW/doc/RUSU_ALEXANDRU_A4_7_1.sql",
+		"/D/facultate/proiectTW/doc/affiliations.png",
+		"/C/Users/alxrusu.IAS/Desktop/WakeOnLan.ps1",
+		"/C/Users/alxrusu.IAS/Desktop/WakeOnLan.ps",
+		"/C/Users/alxrusu.IAS/IdeaProjects/Lab5/out/artifacts/Lab5_jar/Favs.txt",
+		"/C/wamp64/bin/apache/apache2.4.17/bin/php.ini",
+		"/C/wamp64/logs/php_error.log",
+		"/C/xampp/htdocs/sgbd/index.php",
+		"/D/sgbd/sgbd/tema/models.py",
+		"/D/sgbd/sgbd/sgbd/urls.py",
+		"/D/sgbd/sgbd/templates/index.html",
+		"/D/sgbd/sgbd/tema/views.py",
+		"/D/sgbd/sgbd/templates/base.html",
+		"/D/sgbd/sgbd/templates/registration/login.html",
+		"/C/Users/alxrusu.IAS/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/alxrusu.IAS/SQL/test_adauga.sql",
+		"/C/Users/alxrusu.IAS/Downloads/facultate.sql",
+		"/C/oraclexe/app/oracle/product/11.2.0/server/network/ADMIN/listener.ora",
+		"/C/oraclexe/app/oracle/product/11.2.0/server/network/ADMIN/sqlnet.ora",
+		"/C/oraclexe/app/oracle/product/11.2.0/server/network/ADMIN/tnsnames.ora",
+		"/C/Users/alxrusu.IAS/Desktop/check_darkcomet_urls.py",
+		"/D/vms/shared_read_write/monitor_darkcomet_url.py",
+		"/C/Users/alxrusu.IAS/Desktop/monitor_darkcomet_url.py",
+		"/C/Users/alxrusu.IAS/SQL/test_nota.sql",
+		"/C/oraclexe/app/oracle/product/11.2.0/server/database/PWDXE.ora",
+		"/C/oraclexe/app/oracle/oradata/XE/USERS.DBF",
+		"/C/Users/alxrusu.IAS/Desktop/date.py",
+		"/C/Users/alxrusu.IAS/Desktop/fast.py",
+		"/C/Users/alxrusu.IAS/Desktop/sock.py",
+		"/D/dld/Straight.Outta.Compton.2015.NORDIC.1080p.WEB-DL.X264.AC3-Danishbits/suc.1080p-Danishbits.srt",
+		"/C/Users/alxrusu.IAS/Desktop/urls.txt",
+		"/C/Users/alxrusu.IAS/Desktop/sock2.py",
+		"/C/Users/alxrusu.IAS/Desktop/req_domains.py",
+		"/C/Users/alxrusu.IAS/Desktop/input.txt",
+		"/C/Users/alxrusu.IAS/Desktop/lab1_2.py",
+		"/C/Users/alxrusu.IAS/Desktop/IP_LAB.txt",
+		"/C/Users/alxrusu.IAS/Desktop/HelloWorld.java",
+		"/C/Users/alxrusu.IAS/Desktop/fast.txt",
+		"/C/Users/alxrusu.IAS/Desktop/PoE Goods.html",
+		"/C/Users/alxrusu.IAS/Desktop/fingers.py",
+		"/C/Users/alxrusu.IAS/Desktop/fast.ahk",
+		"/C/Users/alxrusu.IAS/Desktop/arc.py",
+		"/C/Users/alxrusu.IAS/Desktop/alex.html",
+		"/D/Tools/bendld/bendld.py",
+		"/D/kits/pycrypto-2.6.1/setup.py",
+		"/C/Users/alxrusu.IAS/Desktop/req.py",
+		"/C/Users/alxrusu.IAS/Documents/Diablo III/D3Prefs.txt",
+		"/D/vms/shared_read_write/retele/server.c",
+		"/D/vms/shared_read_write/retele/pass.c",
+		"/D/vms/shared_read_write/retele/client.c",
+		"/D/vms/shared_read_write/retele/rapid_write.c",
+		"/D/vms/shared_read_write/retele/canvas.txt",
+		"/C/Users/alxrusu.IAS/Desktop/sat.py",
+		"/D/vms/shared_read_write/stefan/server.c",
+		"/D/vms/shared_read_write/stefan/client.c",
+		"/C/Users/alxrusu.IAS/Downloads/client (1).txt",
+		"/C/Users/alxrusu.IAS/Downloads/server (2).txt",
+		"/C/Users/alxrusu.IAS/Downloads/ga.py",
+		"/C/Users/alxrusu.IAS/Desktop/rubik.py",
+		"/C/Users/alxrusu.IAS/Desktop/tsp.py",
+		"/C/Users/alexr/Downloads/populate_db.py",
+		"/C/Users/alxrusu.IAS/Downloads/server.txt",
+		"/C/Users/alxrusu.IAS/Downloads/cod.txt",
+		"/C/Users/alexr/Downloads/server.txt",
+		"/C/Users/alexr/Downloads/client.txt",
+		"/D/vms/shared_read_write/retele/makeclient.sh",
+		"/D/vms/shared_read_write/lfactema2/functii.h",
+		"/D/vms/shared_read_write/lfactema2/functii.c",
+		"/D/vms/shared_read_write/lfactema2/yac.y",
+		"/D/vms/shared_read_write/lfactema2/in.txt"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"->(",
+			"15",
+			"J",
+			"++",
+			"mod",
+			"10",
+			"send",
+			"put",
+			"out",
+			"elem",
+			"lastmove",
+			"put",
+			"sockhandler",
+			"enable_ghc_mod",
+			"accept",
+			"b8",
+			"CrawlerTest",
+			"test_get_page_content",
+			"location",
+			"cwd.",
+			"cwd",
+			"$log = fopen(\"log.txt\", \"w\");",
+			"int",
+			"mediata",
+			"sefie",
+			"STUDENT",
+			"mynewdb",
+			"a",
+			"a.",
+			"oci_connect",
+			"oci",
+			"extensions",
+			"ctrl+enter",
+			"templa",
+			"STUDENT",
+			"|",
+			"127.0.0.1:1604",
+			"http://",
+			";",
+			"search",
+			"sav",
+			"save",
+			"initcanv",
+			"ref",
+			"up",
+			"err_remark",
+			"err_syserr",
+			"logg",
+			"update",
+			"main",
+			"cleanup",
+			"serverhand",
+			"facc_data[",
+			"cleanup",
+			"socket",
+			"init",
+			"perror",
+			"fid_coresp",
+			"facc_data",
+			"ERR",
+			"GetKe",
+			"c_y",
+			"sendkey",
+			"10",
+			"printf",
+			"canvas",
+			"load",
+			"CurrentUser",
+			"underline",
+			"log",
+			"0",
+			"bot",
+			"top",
+			"i",
+			"bot",
+			"back",
+			"right",
+			"front",
+			"left",
+			"faces[5]",
+			"faces[3]",
+			"faces[2]",
+			"faces[0]",
+			"faces[1]",
+			"left",
+			")",
+			"(",
+			"sockfd",
+			"server",
+			"LogIn",
+			"ServerHandshaking",
+			"socket",
+			"init",
+			"main",
+			"echo",
+			"load",
+			"remove",
+			"del",
+			"removefile",
+			"MakeNew",
+			"new",
+			"Files",
+			"LoadFiles",
+			"explist",
+			"state 70",
+			"LINESEP",
+			"-1",
+			"state 3",
+			"state3",
+			"class_decl",
+			"class_def",
+			"EVAL",
+			"CLASS_ID",
+			"class_nesting",
+			"func_eval",
+			"instr",
+			"func_eval",
+			"expr "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"25",
+			"div",
+			"15",
+			"movelist",
+			"gameManager",
+			"$cwd.",
+			"$log = fopen(cwd.\"\\log.txt\", \"w\");",
+			"intval",
+			"conducere",
+			"FaceMazeAdmin",
+			"facemaze",
+			"facemaze\n",
+			"\n",
+			"",
+			";\n",
+			";\\n",
+			"perror",
+			"1+i*3",
+			"f",
+			"top",
+			"bot",
+			"i*3",
+			"faces[bot]",
+			"faces[back]",
+			"faces[right]",
+			"faces[front]",
+			"faces[left]",
+			"bot",
+			"back",
+			"right",
+			"front",
+			"left",
+			"right",
+			"]",
+			"[",
+			"RefreshFileList",
+			"lineend",
+			"UNDEF"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "nodejs/node_server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "nodejs/node_test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								396,
+								396
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "testcode/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 996,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "testcode/test.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "scripts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "stylesheet.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/CSS (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 239.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.haskell_error_panel":
+	{
+		"height": 178.0
+	},
+	"output.haskell_sublime_load":
+	{
+		"height": 273.0
+	},
+	"output.sublime_haskell_build_log":
+	{
+		"height": 178.0
+	},
+	"pinned_build_system": "Packages/Haskell/Haskell.sublime-build",
+	"project": "facemaze.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"setti",
+				"sgbd\\settings.py"
+			],
+			[
+				"logi",
+				"templates\\registration\\login.html"
+			],
+			[
+				"sett",
+				"sgbd\\settings.py"
+			],
+			[
+				"mod",
+				"tema\\models.py"
+			],
+			[
+				"inde",
+				"templates\\index.html"
+			],
+			[
+				"htm",
+				"templates\\base.html"
+			],
+			[
+				"ur",
+				"sgbd\\urls.py"
+			],
+			[
+				"vi",
+				"tema\\views.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
