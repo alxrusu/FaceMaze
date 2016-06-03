@@ -475,7 +475,7 @@
 			"file": "nodejs/node_test.html",
 			"settings":
 			{
-				"buffer_size": 396,
+				"buffer_size": 898,
 				"line_ending": "Windows"
 			}
 		},
@@ -559,10 +559,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 200.0,
-		"last_filter": "package",
+		"height": 58.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
 			[
 				"package",
 				"Package Control: Remove Package"
@@ -655,6 +667,8 @@
 	],
 	"file_history":
 	[
+		"/C/Users/alxrusu.IAS/AppData/Roaming/Sublime Text 3/Packages/LiveReload/LiveReload.sublime-settings",
+		"/C/Users/alxrusu.IAS/AppData/Roaming/Sublime Text 3/Packages/Browser Refresh/Default (Windows).sublime-keymap",
 		"/C/xampp/htdocs/proiectTW/nodejs/node_server.js",
 		"/C/xampp/htdocs/proiectTW/nodejs/node_test.html",
 		"/C/Users/alxrusu.IAS/Desktop/tw/serv.js",
@@ -780,9 +794,7 @@
 		"/C/Users/alexr/Downloads/client.txt",
 		"/D/vms/shared_read_write/retele/makeclient.sh",
 		"/D/vms/shared_read_write/lfactema2/functii.h",
-		"/D/vms/shared_read_write/lfactema2/functii.c",
-		"/D/vms/shared_read_write/lfactema2/yac.y",
-		"/D/vms/shared_read_write/lfactema2/in.txt"
+		"/D/vms/shared_read_write/lfactema2/functii.c"
 	],
 	"find":
 	{
@@ -973,7 +985,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -989,8 +1001,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								243,
+								243
 							]
 						],
 						"settings":
@@ -1001,7 +1013,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1010,15 +1022,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 396,
+						"buffer_size": 898,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								396,
-								396
+								882,
+								882
 							]
 						],
 						"settings":
@@ -1026,10 +1038,10 @@
 							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 838.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1059,7 +1071,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1116,7 +1128,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1145,7 +1157,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -1161,8 +1173,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								106,
+								106
 							]
 						],
 						"settings":
@@ -1173,7 +1185,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]

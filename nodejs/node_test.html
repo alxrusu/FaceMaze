@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8" />
+	<title>Gamedev Canvas Workshop</title>
+
 	<script type="text/javascript">
 	var connection = new WebSocket('ws://localhost:8001');
 	connection.onmessage = function (event){
 		document.getElementById('result0').value=event.data;
 	};
 	</script>
+
+
+    
+    <style>
+    	* { padding: 0; margin: 0; }
+    	canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
+
+
 </head>
 <body>
 <p>Result: <output type=text id="result0" value="" readonly></output></p>
 <input type=text
 onchange="connection.send(this.value);">
+
+<canvas id="myCanvas" width="480" height="320"></canvas>
+
+<script type="text/javascript">
+
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+var x=canvas.width/2;
+var y=canvas.height/2;
+var ballRadius = 10;
+
+var dx=2;
+var dy=-2;
+
+function drawPlayer(){
+	ctx.beginPath();
+	ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+	ctx.fillStyle = "#0095DD";
+	ctx.fill();
+	ctx.closePath();
+}
+
+function collision(){
+	if (y + dy > canvas.height-ballRadius || y + dy < ballRadius) 
+ 	   dy = -dy;
+	if (x + dx > canvas.width-ballRadius || x + dx < ballRadius) 
+	    dx = -dx;
+}
+
+function draw() {
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	drawPlayer();
+	
+	x+=dx;
+	y+=dy;
+	
+	collision();
+
+}
+setInterval(draw, 10);
+	
+
+</script>
+
 </body>
 </html>
