@@ -39,9 +39,7 @@
 
 
 #user {
-	width: 50%;
-	padding-left: 25%;
-	padding-top: 25%;
+	border-radius: 50%;
 }
 
 #userInfo {
