@@ -44,12 +44,14 @@ function player (instance) {
             character.instance.score += smallScore;
             sendScore (character.instance);
             sendDelete (character.instance, character.x, character.y);
+            checkWin (character.instance);
         }
         else if (character.instance.maze[character.x][character.y] == 3) {
             character.instance.maze[character.x][character.y] = 0;
             character.instance.score += bigScore;
             sendScore (character.instance);
             sendDelete (character.instance, character.x, character.y);
+            checkWin (character.instance);
             character.instance.imuneTimer = 7000;
             for (var i=1; i<character.instance.characters.length; i++) {
                 if (character.instance.characters[i].state == 0)
@@ -335,10 +337,11 @@ function detectCollisions (instance) {
         y = enemy.y + enemy.dy * enemy.step / enemy.granularity;
         if (Math.abs (playerX - x) < 0.5 && Math.abs (playerY - y) < 0.5) {
             if (enemy.state == 0) {
+                instance.sleep = 100000000;
+                instance.lives -= 1;
+                instance.socket.sendText ("kil:" + i.toString());
                 instance.socket.sendText ("lvs:" + instance.lives.toString());
-                if (instance.lives != 0) {
-                    instance.lives -= 1;
-                    instance.sleep = 2000;
+                if (instance.lives > 0) {
                     setTimeout (resetPositions, 1500, instance);
                 }
             }
@@ -350,6 +353,22 @@ function detectCollisions (instance) {
             }
         }
     }
+}
+
+function checkWin (instance) {
+    for (var i=0; i<width; i++)
+        for (var j=0; j<height; j++)
+            if (instance.maze[i][j] == 2 || instance.maze[i][j] == 3)
+                return;
+    instance.sleep=2000;
+    instance.socket.sendText ("win");
+    setTimeout (newGame, 1000, instance);
+}
+
+function newGame (instance) {
+    instance.maze = generateMaze();
+    sendMaze (instance);
+    resetPositions (instance);
 }
 
 function sendScore (instance) {
@@ -391,6 +410,7 @@ function resetPositions (instance) {
     for (var i=0; i<instance.characters.length; i++) {
         instance.characters[i].dx = 0;
         instance.characters[i].dy = 0;
+        instance.characters[i].state = 0;
     }
     instance.sleep = 0;
     sendUpdate (instance);

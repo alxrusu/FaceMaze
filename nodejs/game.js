@@ -58,12 +58,9 @@ connection.onmessage = function (event) {
         drawPoints();
         return;
     }
-    if (event.data.startsWith("ini")) {
-        var data = event.data.split(":")[1].split(";");
-        var delay = parseInt (data[0]);
-        width = parseInt (data[1]);
-        height = parseInt (data[2]);
-        setInterval (draw, delay);
+    if (event.data.startsWith("kil")) {
+        var data = event.data.split(":")[1];
+        console.log ("You were killed by " + data);
         return;
     }
     if (event.data.startsWith("lvs")) {
@@ -71,6 +68,19 @@ connection.onmessage = function (event) {
         console.log ("Lives: " + lives);
         if (lives == 0)
             console.log ("Game over");
+        return;
+    }
+    if (event.data.startsWith("win")) {
+        console.log ("Level complete");
+        return;
+    }
+    if (event.data.startsWith("ini")) {
+        var data = event.data.split(":")[1].split(";");
+        var delay = parseInt (data[0]);
+        width = parseInt (data[1]);
+        height = parseInt (data[2]);
+        setInterval (draw, delay);
+        return;
     }
 };
 
