@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	require 'autoload.php';
+	require 'TwitterAPILoader.php';
 	use Abraham\TwitterOAuth\TwitterOAuth;
 	define('CONSUMER_KEY', 'Q5iD9LEWOgNaKkwu1OrJnAJyW');
 	define('CONSUMER_SECRET', 'TeFyW8UuXxGT3tlTgvaUD5OoKvJXXFBsExy2hH3cdrJdfwmVYJ');
@@ -55,5 +55,36 @@
 	}
 	$rand_keys = array_rand($friends, 4);		
 	foreach ($rand_keys as $key => $value)
-		echo $friends[$value]['nume'].'<br><img width=150 height=150 src="'.str_replace('_normal', '', $friends[$value]['poza']).'"></img><br>';
+	{
+		echo '<p id="charname'.$key.'" style="display:none;">'.$friends[$value]['nume'].'</p>';
+		echo '<img id="charimg'.$key.'" style="display:none;" width=150 height=150 src="'.str_replace('_normal', '', $friends[$value]['poza']).'"></img>';
+	}
 ?>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Gamedev Canvas Workshop</title>
+
+    <style>
+    	* { padding: 0; margin: 0; }
+    	canvas { display: block; margin: 0 auto; }
+    </style>
+
+</head>
+<body>
+
+
+<canvas style="position:absolute" id="background" width="720" height="480"></canvas>
+<canvas style="position:absolute" id="points" width="720" height="480"></canvas>
+<canvas style="position:absolute" id="characters" width="720" height="480"></canvas>
+
+
+
+<script type="text/javascript" src="game.js"> </script>
+
+</body>
+</html>

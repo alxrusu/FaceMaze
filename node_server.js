@@ -1,5 +1,4 @@
 var ws = require("nodejs-websocket")
-console.log(ws)
 
 var width = 21, height = 18;
 var delay = 20;

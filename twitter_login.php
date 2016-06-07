@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'autoload.php';
+require 'TwitterAPILoader.php';
 use Abraham\TwitterOAuth\TwitterOAuth;
 define('CONSUMER_KEY', 'Q5iD9LEWOgNaKkwu1OrJnAJyW');
 define('CONSUMER_SECRET', 'TeFyW8UuXxGT3tlTgvaUD5OoKvJXXFBsExy2hH3cdrJdfwmVYJ');

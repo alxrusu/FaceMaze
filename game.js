@@ -14,12 +14,16 @@ var maze;
 var score = 0;
 var lives;
 
-function Character () {
+function Character (number) {
     this.x = -100; this.y = -100;
     this.state = 0;
+    this.image=(document.getElementById("charimg"+number.toString())).src;
+    this.name=(document.getElementById("charname"+number.toString())).innerHTML;
+    console.log(this.image);
+    console.log(this.name);
 }
 
-var characters = [new Character(), new Character(), new Character(), new Character(), new Character()];
+var characters = [new Character(0), new Character(1), new Character(2), new Character(3), new Character(3)];
 
 connection.onmessage = function (event) {
     if (event.data.startsWith("pos")) {
@@ -149,8 +153,8 @@ function drawPoints () {
     bigImage.onload = function() {
         drawImages (pointsContext, big);
     }
-    smallImage.src="twitter.png";
-    bigImage.src="like.png";
+    smallImage.src="assets/twitter.png";
+    bigImage.src="assets/like.png";
 }
 
 function loadImages (sources, info) {
@@ -182,15 +186,15 @@ function drawBackground () {
     for (i=0; i<width; i++)
         for (j=0; j<height; j++) {
             if (maze[i][j] == 1)
-                sources.push("rock" + Math.floor (Math.random() * 4).toString() + ".png");
+                sources.push("assets/rock" + Math.floor (Math.random() * 4).toString() + ".png");
             else
-                sources.push("clay5.png");//"clay" + Math.floor (Math.random() * 6).toString() + ".png");
+                sources.push("assets/clay5.png");//"assets/clay" + Math.floor (Math.random() * 6).toString() + ".png");
             info.push ({i : 0, x : background.width *i /width, y : background.height *j /height, w : background.width /width, h : background.height /height});
         }
     loadImages (sources, info);
 }
 
-function drawCharacter (character) {
+function drawCharacter (character, img) {
     var x = canvas.width * (character.x+0.5) / width;
     var y = canvas.height * (character.y+0.5) / height;
 	ctx.beginPath();
@@ -198,12 +202,14 @@ function drawCharacter (character) {
 	ctx.fillStyle = "#0077ff";
 	ctx.fill();
 	ctx.closePath();
+
+
 }
 
 function draw() {
     
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (var i=0; i<characters.length; i++)
-	   drawCharacter(characters[i]);
+	   drawCharacter(characters[i],"ghost"+toString(i));
 
 }

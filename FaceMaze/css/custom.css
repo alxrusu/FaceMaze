@@ -52,7 +52,3 @@ img#inst_logo:last-of-type:hover{
 -moz-box-shadow:    0px 0px 30px 0px rgba(81, 127, 164, 1);
 box-shadow:         0px 0px 30px 0px rgba(81, 127, 164, 1);
 }
-
-.moreinfo {
-  display: inline-block;
-}
