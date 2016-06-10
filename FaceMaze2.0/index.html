@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dummy</title>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript" src="gates.js"></script>
+	<script type="text/javascript" src="game.js"> </script>
+</head>
+<body>
+
+<div id="main">
+	<div class="gates">
+		
+		<div id="gate_left">
+			<img class="gatetexture" src="texture.png"></img>
+		</div>
+
+		<div id="gate_right">
+			<img class="gatetexture" src="texture.png"></img>
+		</div>
+
+		<div id="logo_wrapper">
+			<img id="logo_charm" src="logo.png"></img>
+		</div>
+		<div id="locker" onclick="start_gate_opening();">
+			<img id="locker_bkg" src="texture.png"></img>
+			<img id="fb_charm" src="facebook.png"></img>
+			<img id="insta_charm" src="instagram.png"></img>
+			<img id="twitter_charm" src="twitter.png"></img>
+		</div>
+	</div>
+
+	<div id="game_wrapper">
+		<canvas style="position:absolute" id="background" width="720" height="480"></canvas>
+		<canvas style="position:absolute" id="points" width="720" height="480"></canvas> 
+		<canvas style="position:absolute" id="characters" width="720" height="480"></canvas> 
+	</div>
+
+</div>
+
+</body>
+</html>
