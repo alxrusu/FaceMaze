@@ -1,4 +1,5 @@
 <?php
+	require_once( 'Facebook/autoload.php' );
 	session_start();
 	require 'TwitterAPILoader.php';
 	use Abraham\TwitterOAuth\TwitterOAuth;
@@ -34,6 +35,38 @@
 			    	$poza=$result['data'][$key]['profile_picture'];
 			    	array_unshift($friends,array('nume'=>$nume,'poza'=>$poza));
 			    }
+			}
+
+		if ($_SESSION['type']=='facebook' &&
+			isset($_SESSION['access_token']))
+			{
+				$fb = new Facebook\Facebook([
+				  'app_id' => '554357831402861',
+				  'app_secret' => '5428d5692c2f38e39025429bbec79a69',
+				  'default_graph_version' => 'v2.5',
+				]); 
+				
+				try {
+
+				  $accessToken = $_SESSION['access_token'];
+				  $response = $fb->get("/me/invitable_friends?fields=picture,name", $accessToken->getValue());
+
+				} catch(Facebook\Exceptions\FacebookResponseException $e) {
+				  // When Graph returns an error
+				  echo 'ERROR: Graph ' . $e->getMessage();
+				  exit;
+				} catch(Facebook\Exceptions\FacebookSDKException $e) {
+				  // When validation fails or other local issues
+				  echo 'ERROR: validation fails ' . $e->getMessage();
+				  exit;
+				}
+				$resp = $response->getGraphEdge()->asArray();
+				foreach ($resp as $graphNode) {
+					$nume=$graphNode['name'];
+				  	$poza=$graphNode['picture']['url'];
+				  	array_unshift($friends,array('nume'=>$nume,'poza'=>$poza));
+
+				}
 			} 		
 	}
 	else
