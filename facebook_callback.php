@@ -53,6 +53,7 @@ echo "Facebook ID: <a href='https://www.facebook.com/".$me->getProperty('id')."'
 //create the url for profile picture
 $profile_pic =  "http://graph.facebook.com/".$me->getProperty('id')."/picture";
 
+$_SESSION['access_token']=$accessToken;
 $_SESSION['type']='facebook';
 $_SESSION['username'] = $me->getProperty('name');
 $_SESSION['profile_picture'] = $profile_pic;
