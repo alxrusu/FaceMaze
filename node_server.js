@@ -1,6 +1,6 @@
 var ws = require("nodejs-websocket")
 
-var width = 21, height = 18;
+var width = 33, height = 18;
 var delay = 20;
 
 var smallScore = 10, bigScore = 30, enemyScore = 200;
@@ -65,6 +65,7 @@ function redGhost (instance) {
     this.instance = instance;
     this.x = -10; this.y = -10;
     this.dx = 0; this.dy = 0;
+    this.direction = 1;
     this.granularity = 14;
     this.state = 0;
     this.step = 0;
@@ -84,9 +85,16 @@ function redGhost (instance) {
             else
                 character.granularity = 20;
         }
-        var direction = getDirection (character.instance.maze, {x:character.x, y:character.y}, targetPos);
-        character.dx = directions[direction].x;
-        character.dy = directions[direction].y;
+        var newDirection = getDirection (character.instance.maze, {x:character.x, y:character.y}, targetPos);
+        if (Math.abs(character.direction - newDirection) == 2) {
+            if (character.state == 2
+                || character.instance.maze[character.x + character.dx][character.y + character.dy] == -1)
+                character.direction = newDirection;
+        }
+        else
+            character.direction = newDirection;
+        character.dx = directions[character.direction].x;
+        character.dy = directions[character.direction].y;
     }
     this.update = update;
 }
@@ -95,6 +103,7 @@ function pinkGhost (instance) {
     this.instance = instance;
     this.x = -10; this.y = -10;
     this.dx = 0; this.dy = 0;
+    this.direction = 1;
     this.granularity = 16;
     this.state = 0;
     this.step = 0;
@@ -123,9 +132,16 @@ function pinkGhost (instance) {
             else
                 character.granularity = 20;
         }
-        var direction = getDirection (character.instance.maze, {x:character.x, y:character.y}, targetPos);
-        character.dx = directions[direction].x;
-        character.dy = directions[direction].y;
+        var newDirection = getDirection (character.instance.maze, {x:character.x, y:character.y}, targetPos);
+        if (Math.abs(character.direction - newDirection) == 2) {
+            if (character.state == 2
+                || character.instance.maze[character.x + character.dx][character.y + character.dy] == -1)
+                character.direction = newDirection;
+        }
+        else
+            character.direction = newDirection;
+        character.dx = directions[character.direction].x;
+        character.dy = directions[character.direction].y;
     }
     this.update = update;
 }
@@ -134,6 +150,7 @@ function cyanGhost (instance) {
     this.instance = instance;
     this.x = -10; this.y = -10;
     this.dx = 0; this.dy = 0;
+    this.direction = 3;
     this.granularity = 16;
     this.state = 0;
     this.step = 0;
@@ -168,9 +185,16 @@ function cyanGhost (instance) {
             else
                 character.granularity = 20;
         }
-        var direction = getDirection (character.instance.maze, {x:character.x, y:character.y}, targetPos);
-        character.dx = directions[direction].x;
-        character.dy = directions[direction].y;
+        var newDirection = getDirection (character.instance.maze, {x:character.x, y:character.y}, targetPos);
+        if (Math.abs(character.direction - newDirection) == 2) {
+            if (character.state == 2
+                || character.instance.maze[character.x + character.dx][character.y + character.dy] == -1)
+                character.direction = newDirection;
+        }
+        else
+            character.direction = newDirection;
+        character.dx = directions[character.direction].x;
+        character.dy = directions[character.direction].y;
     }
     this.update = update;
 }
@@ -179,6 +203,7 @@ function orangeGhost (instance) {
     this.instance = instance;
     this.x = -10; this.y = -10;
     this.dx = 0; this.dy = 0;
+    this.direction = 3;
     this.granularity = 12;
     this.state = 0;
     this.step = 0;
@@ -202,9 +227,16 @@ function orangeGhost (instance) {
             else
                 character.granularity = 20;
         }
-        var direction = getDirection (character.instance.maze, {x:character.x, y:character.y}, targetPos);
-        character.dx = directions[direction].x;
-        character.dy = directions[direction].y;
+        var newDirection = getDirection (character.instance.maze, {x:character.x, y:character.y}, targetPos);
+        if (Math.abs(character.direction - newDirection) == 2) {
+            if (character.state == 2
+                || character.instance.maze[character.x + character.dx][character.y + character.dy] == -1)
+                character.direction = newDirection;
+        }
+        else
+            character.direction = newDirection;
+        character.dx = directions[character.direction].x;
+        character.dy = directions[character.direction].y;
     }
     this.update = update;
 }
@@ -262,12 +294,14 @@ var server = ws.createServer (function (socket) {
 
     socket.on("text", function (str) {
         if (str.startsWith("dir")) {
-            instance.characters[0].direction = parseInt (str.split(":")[1]);
-       }
-       if (str.startsWith("psd")) {
+            var newDirection = parseInt (str.split(":")[1]);
+            if (newDirection < directions.length)
+                instance.characters[0].direction = newDirection;
+        }
+        if (str.startsWith("psd")) {
             instance.paused = 1 - instance.paused;
-       }
-    })
+        }
+    });
 
     socket.on("close", function (code, reason) {
         clearInterval (intervalID);
@@ -396,16 +430,20 @@ function sendMaze (instance) {
 }
 
 function resetPositions (instance) {
-    instance.characters[0].x = 10;
+    instance.characters[0].x = 16;
     instance.characters[0].y = 9;
     instance.characters[1].x = 1;
     instance.characters[1].y = 1;
+    instance.characters[1].direction = 1;
     instance.characters[2].x = 1;
     instance.characters[2].y = height - 2;
+    instance.characters[2].direction = 1;
     instance.characters[3].x = width - 2;
     instance.characters[3].y = height - 2;
+    instance.characters[3].direction = 3;
     instance.characters[4].x = width - 2;
     instance.characters[4].y = 1;
+    instance.characters[4].direction = 3;
     for (var i=0; i<instance.characters.length; i++) {
         instance.characters[i].dx = 0;
         instance.characters[i].dy = 0;
@@ -440,7 +478,7 @@ function generateMaze () {
     //procedural inner walls
     for (i=2; i<width-1; i+=6) 
         for (j=2; j<height-1; j+=5) {
-            if (i == 8 && j == 7) {
+            if (i == 14 && j == 7) {
                 maze[i+0][j+0] = -1;    maze[i+1][j+0] = -1;    maze[i+3][j+0] = -1;    maze[i+4][j+0] = -1;
                 maze[i+0][j+3] = -1;    maze[i+1][j+3] = -1;    maze[i+3][j+3] = -1;    maze[i+4][j+3] = -1;
                 continue;
@@ -574,14 +612,16 @@ function generateMaze () {
         for (j=1; j<height-1; j++)
             if (maze[i][j] == 0)
                 maze[i][j] = 2;
-    for (i=9; i<12; i++)
+    for (i=15; i<18; i++)
         for (j=8; j<10; j++)
             maze[i][j] = 0;
 
     maze[2][6] = 3;
     maze[7][15] = 3;
+    maze[19][15] = 3;
+    maze[30][11] = 3;
+    maze[25][2] = 3;
     maze[13][2] = 3;
-    maze[18][11] = 3;
 
     return maze;
 }
