@@ -61,4 +61,5 @@ $_SESSION['profile_picture'] = $profile_pic;
 /* echo the image out
 echo "<img src=\"" . $profile_pic . "\" />"; 
 */
+header('location:./index.php');
 ?>

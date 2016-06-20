@@ -58,6 +58,7 @@ function parseMessage (event) {
         var data = event.data.split(":")[1];
         score = parseInt (data);
         console.log ("Score: " + score);
+        document.getElementById("userscore").innerHTML=score;
         return;
     }
     if (event.data.startsWith("del")) {
@@ -89,8 +90,10 @@ function parseMessage (event) {
     if (event.data.startsWith("lvs")) {
         lives = parseInt (event.data.split(":")[1]);
         console.log ("Lives: " + lives);
-        if (lives == 0)
+        if (lives == 0){
             console.log ("Game over");
+            connection.close();
+        }
         return;
     }
     if (event.data.startsWith("win")) {

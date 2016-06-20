@@ -1,0 +1,22 @@
+<script type="text/javascript">
+
+function ListFriends(htmltext){
+	document.write(htmltext)
+}
+
+function getFriends(){
+	var xmlHttp = new XMLHttpRequest();
+	
+	xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            ListFriends(xmlHttp.responseText);
+    }
+
+    xmlHttp.open( "GET", "http://127.0.0.1/FaceMaze/friends.php", true ); // false for synchronous request
+    xmlHttp.send( null );
+    
+}
+
+getFriends()
+
+</script>
