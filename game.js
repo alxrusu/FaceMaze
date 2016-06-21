@@ -16,6 +16,8 @@ var lives;
 
 function startGame () {
 
+    document.getElementById("gameresult").style.display="none";
+
     foreground = document.getElementById("characters");
     foregroundContext = foreground.getContext("2d");
     background = document.getElementById("background");
@@ -59,6 +61,8 @@ function parseMessage (event) {
         score = parseInt (data);
         console.log ("Score: " + score);
         document.getElementById("userscore").innerHTML=score;
+        document.getElementById("score").innerHTML=score;
+        document.getElementById("score").innerHTML=document.getElementById("score").innerHTML+" points!";
         return;
     }
     if (event.data.startsWith("del")) {
@@ -92,12 +96,14 @@ function parseMessage (event) {
         console.log ("Lives: " + lives);
         if (lives == 0){
             console.log ("Game over");
+            document.getElementById("gameresult").style.display="block";
             connection.close();
         }
         return;
     }
     if (event.data.startsWith("win")) {
         console.log ("Level complete");
+        document.getElementById("gameresult").style.display="block";
         return;
     }
     if (event.data.startsWith("ini")) {
@@ -190,8 +196,8 @@ function drawBackground () {
         return;
     }
     var i, j;
-    for (i=0; i<width; i++)
-        for (j=0; j<height; j++) {
+    for (i=1; i<width-1; i++)
+        for (j=1; j<height-1; j++) {
             if (maze[i][j] == 1)
                 backgroundContext.drawImage (rocks[Math.floor (Math.random() * rocks.length)], background.width *i /width, background.height *j /height, background.width /width, background.height /height);
             else

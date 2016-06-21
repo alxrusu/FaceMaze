@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dummy</title>
+	<title>FaceMaze</title>
+	<link rel="icon" type="image/x-icon" href="images/brand/pac_icon.png">
 	<link rel="stylesheet" href="styles.css"/>
 	<script type="text/javascript" src="gates.js"></script>
 	<script type="text/javascript" src="game.js"> </script>
@@ -19,13 +20,14 @@
 </script>
 
 <div id="main">
-	
 	<div id="gamebkg"></div>
 	<div id="userdata"></div>
 	<a href="./closesession.php"><div id="logout"></div></a>
 
 	<div class="gates" id="gates">
+
 		<div id="gate">
+			<img src="./images/brand/FaceMaze_logo.png" id="logo"/>
 			<img class="gatetexture" src="images/1.png"></img>
 			
 			
@@ -52,7 +54,11 @@
 	<div id="game_wrapper">
 		<canvas style="position:absolute" id="background" width="1500" height="900"></canvas>
 		<canvas style="position:absolute" id="points" width="1500" height="900"></canvas> 
-		<canvas style="position:absolute" id="characters" width="1500" height="900"></canvas> 
+		<canvas style="position:absolute" id="characters" width="1500" height="900"></canvas>
+		<div onclick="startGame();" style="position:absolute" id="gameresult" width="1500" height="900">
+		<p class="endtext">Congratulations, you have scored</p>
+		<p class="endtext" id="score"></p>
+		</div>
 	</div>
 
 </div>
