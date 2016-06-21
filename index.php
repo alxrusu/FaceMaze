@@ -33,7 +33,7 @@
 			
 			<div id="charms">
 				
-				<a href="./facebook_login.php">
+				<a href="./facebook_login_proxy.php">
 					<img src="images/brand/facebook_logo.png" onmouseover="this.src='images/brand/facebook_logo_original.png';" onmouseout="this.src='images/brand/facebook_logo.png';" id="fb_charm" width="10%">
 				</a>
 
