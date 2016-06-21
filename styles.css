@@ -10,7 +10,7 @@ body{
 	width: 40%;
 
 	left: 30%;
-	top:10%;
+	top:3%;
 }
 
 #main {
@@ -37,7 +37,7 @@ canvas {
 #gamebkg{
 	position: absolute;
 	display: block;
-	background: #333333;
+	background: #D4F1FF;
 	top: 0%;
 	bottom: 0%;
 	width: 100%;
@@ -57,9 +57,9 @@ canvas {
 #friends{
 	position: absolute;
 	display: block;
-	bottom:3%;
+	bottom:2%;
 	left: 30%;
-	height: 5%;
+	height: 6%;
 	width: 60%;
 	background: #fff000;
 }
@@ -98,11 +98,9 @@ canvas {
 
 #logout{
 	position: absolute;
-	left:0px;
-	top:0px;
-	width: 4%;
-	height: 4%;
-	background: #ff0000;
+	right:10%;
+	top:2%;
+	height: 6%;
 }
 
 .gates {
@@ -183,5 +181,5 @@ canvas {
   font-weight: bold;
   color: #ffffff;
   opacity: 2;
-  font-size: 10vw;
+  font-size: 4vw;
 }

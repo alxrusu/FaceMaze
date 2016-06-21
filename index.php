@@ -22,12 +22,12 @@
 <div id="main">
 	<div id="gamebkg"></div>
 	<div id="userdata"></div>
-	<a href="./closesession.php"><div id="logout"></div></a>
+	<img id="logout" onclick="location.href='./closesession.php';" src="./images/logout_icon.png">
 
 	<div class="gates" id="gates">
 
 		<div id="gate">
-			<img src="./images/brand/FaceMaze_logo.png" id="logo"/>
+			<img src="./images/brand/FaceMaze_logo1.png" id="logo"/>
 			<img class="gatetexture" src="images/1.png"></img>
 			
 			
@@ -56,8 +56,8 @@
 		<canvas style="position:absolute" id="points" width="1500" height="900"></canvas> 
 		<canvas style="position:absolute" id="characters" width="1500" height="900"></canvas>
 		<div onclick="startGame();" style="position:absolute" id="gameresult" width="1500" height="900">
-		<p class="endtext">Congratulations, you have scored</p>
-		<p class="endtext" id="score"></p>
+		<p class="endtext" id="score">Congratulations, you have scored</p>
+		<p class="endtext" id="killer"></p>
 		</div>
 	</div>
 

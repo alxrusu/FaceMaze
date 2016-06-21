@@ -61,8 +61,7 @@ function parseMessage (event) {
         score = parseInt (data);
         console.log ("Score: " + score);
         document.getElementById("userscore").innerHTML=score;
-        document.getElementById("score").innerHTML=score;
-        document.getElementById("score").innerHTML=document.getElementById("score").innerHTML+" points!";
+        document.getElementById("score").innerHTML="Congratulations, you have scored "+score+" points!";
         return;
     }
     if (event.data.startsWith("del")) {
@@ -89,6 +88,7 @@ function parseMessage (event) {
     if (event.data.startsWith("kil")) {
         var data = event.data.split(":")[1];
         console.log ("You were killed by " + data);
+        document.getElementById("killer").innerHTML="You were killed by " + document.getElementById("charname"+data).innerHTML;
         return;
     }
     if (event.data.startsWith("lvs")) {
